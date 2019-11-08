@@ -8,7 +8,7 @@
 using namespace std;
 
 int main() {
-	{
+	{ //Testing SLL functions.
 		SLL<int> list;
 		list.addFront(10);
 		list.addFront(20);
@@ -34,7 +34,7 @@ int main() {
 		list.print();
 	}
 
-	{
+	{ //Testing DLL functions.
 		DLL<char> dlist;
 		dlist.addFront('A');
 		dlist.addFront('B');

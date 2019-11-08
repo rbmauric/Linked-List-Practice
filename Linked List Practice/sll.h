@@ -2,7 +2,7 @@
 #define SLL_H
 
 template<typename T>
-class Node {
+class Node { //Singly linked list node contains a next pointer and an element
 public:
 	Node() {
 		elem = 0;
@@ -19,7 +19,7 @@ public:
 };
 
 template <typename T>
-class SLL {
+class SLL { //Singly linked list contains a head pointer.
 public:
 	SLL();
 

@@ -2,7 +2,7 @@
 #define DLL_H
 
 template<class T>
-class DNode {
+class DNode { //Doubly Linked List node has a previous pointer, a next pointer, and an element.
 public:
 	DNode() {
 		elem = 0;
@@ -22,7 +22,7 @@ public:
 };
 
 template <class T>
-class DLL {
+class DLL { //Doubly linked list has a head pointer and a tail pointer.
 public:
 	DLL();
 
