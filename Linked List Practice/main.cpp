@@ -10,45 +10,58 @@ using namespace std;
 int main() {
 	{ //Testing SLL functions.
 		SLL<int> list;
+		cout << "Inserting elements... \n";  
 		list.addFront(10);
-		list.addFront(20);
+		list.addFront(30);
 		list.print();
 
 		list.addFront(40);
 		list.print();
 
-		list.insertAt(30, 3);
+		list.insertAt(20, 3);
 		list.print();
 
+		cout << "Node at position 3: " << list.at(3)->elem << endl;
+		cout << "Node at front: " << list.front()->elem << endl;
+		
+		cout << "Removing elements... \n";
 		list.removeFront();
 		list.print();
 
 		list.removeAt(2);
 		list.print();
 		
+
 		cout << "Size of list: " << list.size() << endl;
 
 		cout << "Clearing list. " << endl;
 		list.clear();
 		
 		list.print();
+		cout << endl;
 	}
 
 	{ //Testing DLL functions.
 		DLL<char> dlist;
-		dlist.addFront('A');
+		cout << "Inserting elements... \n";
+		dlist.addFront('D');
 		dlist.addFront('B');
 		dlist.print();
 		
-		dlist.addFront('C');
+		dlist.addFront('A');
 		dlist.print();
 
-		dlist.addBack('D');
+		dlist.addBack('E');
 		dlist.print();
 
-		dlist.insertAt('E', 3);
+		dlist.insertAt('C', 3);
 		dlist.print();
 
+		cout << "Node at position 3: " << dlist.at(3)->elem << endl;
+		cout << "Node at front: " << dlist.front()->elem << endl;
+		cout << "Node at back: " << dlist.back()->elem << endl;
+
+		cout << "Removing elements... \n";
 		dlist.removeFront();
 		dlist.print();
 
@@ -64,6 +77,7 @@ int main() {
 		dlist.clear();
 
 		dlist.print();
+		cout << endl;
 	}
 	return 0;
 }

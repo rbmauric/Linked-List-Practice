@@ -80,8 +80,17 @@ void SLL<T>::clear() { //Erase all elements in the SLL.
 }
 
 template <typename T>
-Node<T> SLL<T>::front() { //Return the front of the SLL.
+Node<T>* SLL<T>::front() { //Return the front of the SLL.
 	return head;
+}
+
+template <typename T>
+Node<T>* SLL<T>::at(int n) { //Return the node at an index
+	Node<T>* temp = head;
+	for (int i = 0; i < n - 1; i++)
+		temp = temp->next;
+
+	return temp;
 }
 
 template <typename T>

@@ -122,12 +122,21 @@ void DLL<T>::clear() { //Erase all elements in the DLL.
 }
 
 template <typename T>
-DNode<T> DLL<T>::front() { //Return the front of the DLL.
+DNode<T>* DLL<T>::at(int n) { //Return the node at an index
+	DNode<T>* temp = head;
+	for (int i = 0; i < n - 1; i++)
+		temp = temp->next;
+
+	return temp;
+}
+
+template <typename T>
+DNode<T>* DLL<T>::front() { //Return the front of the DLL.
 	return head;
 }
 
 template <typename T>
-DNode<T> DLL<T>::back() { //Return the back of the DLL.
+DNode<T>* DLL<T>::back() { //Return the back of the DLL.
 	return tail;
 }
 

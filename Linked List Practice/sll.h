@@ -28,7 +28,8 @@ public:
 	void removeFront();
 	void removeAt(int n);
 	void clear();
-	Node<T> front();
+	Node<T>* front();
+	Node<T>* at(int n);
 	int size();
 	void print();
 

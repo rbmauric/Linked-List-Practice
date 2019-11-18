@@ -34,8 +34,9 @@ public:
 	void removeAt(int n);
 
 	void clear();
-	DNode<T> front();
-	DNode<T> back();
+	DNode<T>* at(int n);
+	DNode<T>* front();
+	DNode<T>* back();
 	int size(); 
 	void print();
 
