@@ -21,7 +21,6 @@ int main() {
 		list.insertAt(20, 3);
 		list.print();
 
-		
 		cout << "Node at position 3: " << list.at(3)->elem << endl;
 		cout << "Node at front: " << list.front()->elem << endl;
 		cout << "Node after node at position 3: " << list.at(3)->next->elem << endl;
