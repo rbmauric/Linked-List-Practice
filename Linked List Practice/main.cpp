@@ -1,5 +1,5 @@
 //Ryan Mauricio
-//EPP Practice
+//Linked List Implementation
 //10/17/19
 
 #include <iostream>
