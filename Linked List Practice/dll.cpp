@@ -156,12 +156,12 @@ template <typename T>
 void DLL<T>::print() { //Print all contents of the DLL.
 	DNode<T>* temp = head;
 	if (head == nullptr)
-		cout << "List is empty. \n";
+		std::cout << "List is empty. \n";
 
 	while (temp != nullptr) {
-		cout << temp->elem << " ";
+		std::cout << temp->elem << " ";
 		temp = temp->next;
 	}
 
-	cout << endl;
+	std::cout << std::endl;
 }
